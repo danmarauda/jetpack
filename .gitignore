@@ -49,3 +49,9 @@ yarn-error.log*
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# subframe
+.subframe/access-token
+
+# Sentry Config File
+.sentryclirc

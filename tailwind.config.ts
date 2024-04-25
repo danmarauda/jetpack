@@ -6,6 +6,7 @@ export default {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}",
+    "./src/subframe/**/*.{js,ts,jsx,tsx}", // added as per instruction
   ],
   theme: {
     /* tremor */
@@ -189,4 +190,5 @@ export default {
   ],
   /* */
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+  presets: [require("./src/subframe/tailwind.config.js")],
 } satisfies Config;
